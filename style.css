@@ -21,8 +21,20 @@
 #card p {
    font-size: 1.5em;
    text-align: justify;
-   padding-left: 30px; /* Espacio en blanco a la izquierda */
-   padding-right: 30px; /* Espacio en blanco a la derecha */
+   padding-left: 5px; /* Espacio en blanco a la izquierda */
+   padding-right: 5px; /* Espacio en blanco a la derecha */
+   position: fixed; /* Hacer fijo el párrafo */
+   top: 55%; /* Colocar el párrafo ligeramente por debajo del centro del contenedor */
+   left: 50%; /* Colocar el párrafo en el centro horizontal del contenedor */
+   transform: translate(-50%, -50%); /* Centrar el párrafo vertical y horizontalmente */
+   max-width: calc(1000% - 1000px); /* Establecer un ancho máximo más amplio para que no exceda el ancho del contenedor */
+   max-height: calc(100% - 100px); /* Establecer la altura máxima para que no exceda la altura del contenedor */
+   margin-top: -10px; /* Agregar un margen superior para evitar que se sobreponga sobre el título h2 */
+   margin-bottom: 20px; /* Agregar un margen inferior para dar espacio al contenido debajo del párrafo */
+   margin-left: 10px; /* Agregar un margen izquierdo más amplio */
+   margin-right: 10px; /* Agregar un margen derecho más amplio */
+   z-index: 2; /* Asegurar que el párrafo esté por encima de otros elementos */
+   overflow: auto; /* Agregar desplazamiento vertical si el contenido es demasiado largo */
 }
 
 .side {
